@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        *{
+            padding: 0;
+            border: 0;
+            margin: 0;
+            color: white;
+             font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+          background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEyqbYho2H0hLOLN9uJY7NgaoQ2Npp-c5zroptD3AcNQ&s=10);  
+        }
+         main{
+            background-color: #4e4e4e;
+            padding: 40px;
+            border-radius: 8px;
+            height:  250px;
+            width: 400PX;
+            text-align: center;
+        }
+           .input-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+
+        .input-group {
+            margin-bottom: 1rem;
+            text-align: left;
+           
+        }
+        #email{
+             width: 250px;
+        }
+         button{
+              height:30px;
+            width: 150px;
+            border-radius: 10px;
+            color: black;
+         }
+
+        button:hover {
+            background-color: #929191;
+        }
+        main input{
+            border-radius: 10px;
+             color: black    ;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h2>Login</h2>
+        <form action="mainCod.html">
+            <div class="input-group">
+                <label for="username"> Usuário</label>
+                <input name="username" required>
+            </div>
+             <div class="input-group">
+                <label for="email"> Email</label>
+                <input id="email" type="email"  name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Senha</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+             
+            <button type="submit" >Entrar</button>
+        </form>
+    </main>
+</body>
+
+
+</html>
